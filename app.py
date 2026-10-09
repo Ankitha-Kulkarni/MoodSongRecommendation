@@ -67,8 +67,8 @@ def get_secret(key):
         return None
 
 
-CLIENT_ID = get_secret("Client_ID")
-CLIENT_SECRET = get_secret("Client_SECRET")
+CLIENT_ID = get_secret("SPOTIFY_CLIENT_ID")
+CLIENT_SECRET = get_secret("SPOTIFY_CLIENT_SECRET")
 
 if not CLIENT_ID or not CLIENT_SECRET:
     st.error(
